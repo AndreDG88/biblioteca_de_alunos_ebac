@@ -138,7 +138,8 @@ int main()
 	     printf("Escolha a opção desejada do menu:\n\n");
 	     printf("\t1 - Cadastrar Aluno\n");
 	     printf("\t2 - Consultar Registro\n");
-	     printf("\t3 - Apagar Registro\n\n"); // Fim do menu
+	     printf("\t3 - Apagar Registro\n");
+	     printf("\t4 - Sair da Biblioteca\n\n"); // Fim do menu
 	     printf("Esse software é de uso exclusivo dos membros da EBAC. Desenvolvido por: André Soares\n\n");
 	     printf("Qual opção você deseja?:");
 	
@@ -159,6 +160,11 @@ int main()
 		    case 3:
 		    apagar();
 		    break;
+		    
+		    case 4:
+		    printf("Obrigado por visitar a nossa Biblioteca!\n");
+			return 0;
+			break;	
 		    
 		    default:
 		    printf("Opção inválida, favor tentar novamente\n");
